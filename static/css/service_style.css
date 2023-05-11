@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "kyiv machine";
+}
+body{
+    overflow-x: hidden;
+    color: #fff;
+    background: linear-gradient(45deg, #227ff3, #ca0e75de);
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.service{
+    width: 100vw;
+    padding: 20px 40px;
+    display: flex;
+}
+.service .content{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    padding: 20px 10px;
+    background: aliceblue;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5),
+                                inset 0 0 10px rgba(0,0,0,.2);
+    border-bottom: 1px solid #fff;
+    transition: all .5s ease;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.service .content:hover{
+    border-bottom: 20px solid #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all .5s ease;
+}
+.service .content h1{
+    margin-left: 10px;
+}
+.service .content p{
+    color: green;
+    margin-left: 20px;
+    list-style: circle;
+}
+@media screen and (max-width: 800px) {
+    .service{
+        flex-direction: column;
+    }
+    .service .content{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
